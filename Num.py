@@ -2,10 +2,10 @@ import random, time
 O = 0
 while O == 0 or O == 1 :
     for i in range(0,6):
-        A=random.randrange(1,6)
-        B=random.randrange(1,6)
-        C=random.randrange(1,6)
-        D=random.randrange(1,6)
+        A=random.randrange(1,7)
+        B=random.randrange(1,7)
+        C=random.randrange(1,7)
+        D=random.randrange(1,7)
 
         if (A <= B and A <= C and A <= D ):
             print(B+C+D)
@@ -42,8 +42,6 @@ while O == 0 or O == 1 :
         elif i == 5:
             T = Z
 
-    print()
-    print()
     print(Y,X,W,V,U,T)
     print(Y+X+W+V+U+T)
     if(Y+X+W+V+U+T >= 65):   
@@ -51,21 +49,23 @@ while O == 0 or O == 1 :
             M=(Y+X+W+V+U+T)
             N=(Y,X,W,V,U,T)
             O = 1
-            print("one done:", M)      
+            print("one done:", M)  
+            print()
+            print()    
         else:
             P=(Y+X+W+V+U+T)
             Q=(Y,X,W,V,U,T)
             O = 2
             print("two done:", P) 
+            print()
+            print()
     else:
         print("fail")
+        print()
+        print()
 
-        
 print(M)
 print(N)
 print(P)
 print(Q)
-        
-print (A, B, C, D)  
-
 """ 3 hours total"""
